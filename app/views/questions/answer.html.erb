@@ -1,0 +1,19 @@
+<div class="mycontainer">
+  <h1 class="my-3">Stupid Coaching</h1>
+  <div class="list-group">
+    <a href="#" class="list-group-item list-group-item-action" >
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1"><%= params[:question] %></h5>
+        <small>- you</small>
+      </div>
+    </a>
+    <a href="#" class="list-group-item list-group-item-action">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1"><%= "#{@coachanswer}" %></h5>
+        <small class="text-body-secondary">- your Coach</small>
+      </div>
+    </a>
+  </div>
+
+  <button type="button" class="btn btn-outline-primary my-3"><%= link_to "Ask a new question", ask_path %></button>
+</div>
